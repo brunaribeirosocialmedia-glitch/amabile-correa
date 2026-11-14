@@ -315,6 +315,9 @@ p { margin: 0 0 1em; }
 
 /* ---------- CTA final ---------- */
 .final { background: var(--terracota); color: var(--creme); padding: 80px 0; text-align: center; }
+.final__grid { display: grid; gap: 36px; justify-items: center; }
+.final__media { margin: 0; width: 100%; max-width: 280px; }
+.final__media img, .final__media .img-slot { border-radius: var(--raio-img); aspect-ratio: 4 / 5; object-fit: cover; width: 100%; }
 .final__inner { max-width: 760px; }
 .final h2 { color: var(--branco); }
 .final p { font-size: 1.08rem; color: #F6E4DA; margin-bottom: 32px; }
@@ -323,7 +326,10 @@ p { margin: 0 0 1em; }
 .final__contacts a:hover { border-bottom-color: var(--creme); }
 @media (min-width: 860px) {
   .final { padding: 112px 0; }
-  .final__contacts { flex-direction: row; justify-content: center; flex-wrap: wrap; gap: 8px 28px; }
+  .final__grid { grid-template-columns: .75fr 1.25fr; gap: 72px; align-items: center; justify-items: stretch; }
+  .final__media { max-width: 400px; justify-self: end; }
+  .final { text-align: left; }
+  .final__contacts { flex-direction: row; justify-content: flex-start; flex-wrap: wrap; gap: 8px 28px; }
 }
 
 /* ---------- Rodapé ---------- */
