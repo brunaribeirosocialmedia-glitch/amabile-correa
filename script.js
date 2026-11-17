@@ -28,7 +28,8 @@
   function onScroll() {
     var y = window.scrollY;
     nav.classList.toggle("is-scrolled", y > 8);
-    floatBtn.classList.toggle("is-visible", y > hero.offsetHeight * 0.7);
+    // nas páginas sem capa, o botão aparece depois de um pouco de rolagem
+    if (floatBtn) floatBtn.classList.toggle("is-visible", y > (hero ? hero.offsetHeight * 0.7 : 240));
   }
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
@@ -62,67 +63,4 @@
     reveals.forEach(function (el) { el.classList.add("is-in"); });
   }
 
-  /* ---------- Sala de Imprensa ---------- */
-  var list = document.getElementById("press-list");
-  var empty = document.getElementById("press-empty");
-  var filterBox = document.getElementById("press-filter");
-  var yearSelect = document.getElementById("press-year");
-  var meses = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"];
-
-  var releases = (window.RELEASES || [])
-    .filter(function (r) { return r && r.titulo && r.data; })
-    .sort(function (a, b) { return b.data.localeCompare(a.data); });
-
-  function formatDate(iso) {
-    var p = iso.split("-");
-    return Number(p[2]) + " " + meses[Number(p[1]) - 1] + " " + p[0];
-  }
-
-  function el(tag, cls, text) {
-    var n = document.createElement(tag);
-    if (cls) n.className = cls;
-    if (text) n.textContent = text;
-    return n;
-  }
-
-  function render(year) {
-    list.innerHTML = "";
-    var items = releases.filter(function (r) { return !year || r.data.slice(0, 4) === year; });
-    empty.hidden = items.length > 0;
-    items.forEach(function (r) {
-      var li = el("li", "release");
-      var meta = el("div", "release__meta");
-      var time = el("time", null, formatDate(r.data));
-      time.setAttribute("datetime", r.data);
-      meta.appendChild(time);
-      if (r.veiculo) meta.appendChild(el("span", null, r.veiculo));
-      if (r.exemplo) meta.appendChild(el("span", "release__tag", "Exemplo"));
-      li.appendChild(meta);
-      li.appendChild(el("h3", null, r.titulo));
-      if (r.cliente) li.appendChild(el("p", "release__client", r.cliente));
-      if (r.link) {
-        var isPdf = /\.pdf($|\?)/i.test(r.link);
-        var a = el("a", "btn btn--ghost btn--sm", isPdf ? "Baixar PDF" : "Ler release");
-        a.href = r.link;
-        a.target = "_blank";
-        a.rel = "noopener";
-        a.setAttribute("aria-label", (isPdf ? "Baixar PDF do release: " : "Ler release: ") + r.titulo);
-        li.appendChild(a);
-      }
-      list.appendChild(li);
-    });
-  }
-
-  var years = releases.map(function (r) { return r.data.slice(0, 4); })
-    .filter(function (y, i, arr) { return arr.indexOf(y) === i; });
-  if (years.length > 1) {
-    years.forEach(function (y) {
-      var opt = el("option", null, y);
-      opt.value = y;
-      yearSelect.appendChild(opt);
-    });
-    filterBox.hidden = false;
-    yearSelect.addEventListener("change", function () { render(yearSelect.value); });
-  }
-  render("");
 })();
