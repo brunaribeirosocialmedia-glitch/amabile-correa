@@ -1,7 +1,7 @@
 /* =========================================================
    Amábile Corrêa — Assessoria de Imprensa
    Design system: tokens abaixo. Para trocar a fonte dos
-   títulos (ex.: Jost ou Sensation), mude só --fonte-titulo.
+   títulos (hoje: Sansation), mude só --fonte-titulo.
    ========================================================= */
 :root {
   --terracota: #AB4A30;
@@ -21,7 +21,7 @@
   --texto-suave: #D3C2B4;
   --acento: #E8A488;
 
-  --fonte-titulo: "Fraunces", Georgia, "Times New Roman", serif;
+  --fonte-titulo: "Sansation", "Inter", system-ui, sans-serif;
   --fonte-texto: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 
   --raio-btn: 8px;
@@ -44,10 +44,10 @@ body {
 img { max-width: 100%; display: block; height: auto; }
 a { color: var(--acento); }
 ul, ol { margin: 0; padding: 0; list-style: none; }
-h1, h2, h3 { font-family: var(--fonte-titulo); font-weight: 600; line-height: 1.15; margin: 0 0 .6em; color: var(--texto); letter-spacing: -.01em; }
+h1, h2, h3 { font-family: var(--fonte-titulo); font-weight: 700; line-height: 1.15; margin: 0 0 .6em; color: var(--texto); letter-spacing: -.01em; }
 h1 { font-size: clamp(2.1rem, 7vw, 3.6rem); }
 h2 { font-size: clamp(1.7rem, 5vw, 2.6rem); }
-h3 { font-size: 1.2rem; font-weight: 500; }
+h3 { font-size: 1.2rem; font-weight: 700; }
 p { margin: 0 0 1em; }
 
 :focus-visible { outline: 3px solid var(--acento); outline-offset: 3px; border-radius: 4px; }
