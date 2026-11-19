@@ -68,6 +68,8 @@ window.RELEASES = [
     cidade: "Jaguaruna (SC)",
     data: "2026-11-06",
     resumo: "Aeroporto Regional Sul, em Jaguaruna, recebe o voo inaugural do Programa VOA + SC, operado pela Azul Conecta, com rota direta para Joinville.",
+    imagem: "releases/voo-inaugural-jaguaruna.jpg",
+    legenda: "Batismo da aeronave pelo Corpo de Bombeiros no voo inaugural do Programa VOA + SC, no Aeroporto Regional Sul, em Jaguaruna",
     texto: [
       "A ampliação da conectividade aérea em Santa Catarina ganhou um novo capítulo no fim da tarde desta sexta-feira (6), com a realização do voo inaugural do Programa VOA + SC no Aeroporto Regional Sul Humberto Ghizzo Bortoluzzi, em Jaguaruna. A cerimônia contou com o batismo da aeronave pelo Corpo de Bombeiros e a presença de autoridades municipais e estaduais.",
       "Durante o encontro, o diretor executivo da Regional Sul Airport, Eglon Buraseska, apresentou aos representantes públicos as melhorias realizadas no aeroporto, os investimentos em andamento e os projetos previstos para os próximos anos. A exposição abordou a modernização da infraestrutura e as possibilidades de expansão das operações.",
