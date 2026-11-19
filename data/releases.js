@@ -35,6 +35,7 @@ window.RELEASES = [
     cidade: "Tubarão (SC)",
     data: "2026-11-11",
     resumo: "Imóveis em Tubarão e Palhoça vão a leilão em 30 de novembro e 14 de dezembro, com lances mínimos que somam R$ 14,3 milhões.",
+    imagem: "releases/inoversasul-leilao-imoveis.jpg",
     texto: [
       "A Fundação InoversaSul, antiga Fundação Unisul, levará a leilão dois imóveis não operacionais localizados em Tubarão e Palhoça. A primeira praça está marcada para 30 de novembro e a segunda para 14 de dezembro de 2026. Os valores mínimos dos imóveis somam R$ 14,3 milhões.",
       "Em Tubarão, o imóvel fica no bairro São Martinho, junto à SC-370. A propriedade, onde funcionava a antiga sede da Acref, possui 16.176 metros quadrados de terreno e 654 metros quadrados de construções. O lance mínimo será de R$ 5,3 milhões. A área integra o patrimônio adquirido pela Fundação há muitos anos.",
@@ -51,6 +52,7 @@ window.RELEASES = [
     cidade: "Tubarão (SC)",
     data: "2026-11-17",
     resumo: "Com quase 600 matrículas nas séries da parceria, o Colégio Dehon passa a oferecer, a partir de 2027, disciplinas do currículo norte-americano em inglês.",
+    imagem: "releases/colegio-dehon-texas-tech.jpg",
     texto: [
       "O Colégio Dehon, mantido pela Fundação InoversaSul, é a maior unidade escolar parceira da Texas Tech K-12 na América Latina em número de alunos, conforme informações da própria Texas Tech K-12. O colégio soma quase 600 matrículas nas três séries contempladas pela parceria com o programa de educação básica da Texas Tech University (TTU), dos Estados Unidos. As atividades começam em 2027 e abrangem o 9º ano do ensino fundamental e a 1ª e a 2ª séries do ensino médio.",
       "Os estudantes terão disciplinas do currículo norte-americano em inglês na própria escola, junto com as aulas do currículo brasileiro. A formação contará com a participação de professores do Dehon e da Texas Tech K-12. Segundo o diretor-geral do colégio, José Antonio Matiolla, os alunos terão contato semanal com os docentes dos Estados Unidos.",
