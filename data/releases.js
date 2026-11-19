@@ -33,7 +33,7 @@ window.RELEASES = [
     linhaFina: "Áreas em Tubarão e Palhoça têm lances mínimos de R$ 5,3 milhões e R$ 9 milhões; recursos serão destinados à quitação de dívida trabalhista.",
     cliente: "Fundação InoversaSul",
     cidade: "Tubarão (SC)",
-    data: "2026-11-18",
+    data: "2026-11-11",
     resumo: "Imóveis em Tubarão e Palhoça vão a leilão em 30 de novembro e 14 de dezembro, com lances mínimos que somam R$ 14,3 milhões.",
     texto: [
       "A Fundação InoversaSul, antiga Fundação Unisul, levará a leilão dois imóveis não operacionais localizados em Tubarão e Palhoça. A primeira praça está marcada para 30 de novembro e a segunda para 14 de dezembro de 2026. Os valores mínimos dos imóveis somam R$ 14,3 milhões.",
